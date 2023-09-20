@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=7 format=2]
+
+[ext_resource path="res://theme/normal_text.tres" type="DynamicFontData" id=1]
+[ext_resource path="res://theme/label_font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://theme/title_font.tres" type="DynamicFontData" id=3]
+
+[sub_resource type="StyleBoxLine" id=1]
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 42
+font_data = ExtResource( 1 )
+
+[resource]
+Label/colors/font_color = Color( 0.54902, 0.54902, 0.54902, 1 )
+Label/fonts/font = ExtResource( 2 )
+PanelContainer/styles/panel = SubResource( 1 )
+RichTextLabel/colors/default_color = Color( 0.2, 0.2, 0.2, 1 )
+RichTextLabel/fonts/bold_font = SubResource( 3 )
+RichTextLabel/fonts/normal_font = SubResource( 2 )
