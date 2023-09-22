@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://theme/rich_effects.gd" type="Script" id=1]
+[ext_resource path="res://theme/slide_template.tres" type="Theme" id=2]
+[ext_resource path="res://slides/slide_template.tscn" type="PackedScene" id=3]
+[ext_resource path="res://media/dafoe_looking_up.jpg" type="Texture" id=4]
+
+[sub_resource type="RichTextEffect" id=1]
+script = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Slide" parent="." instance=ExtResource( 3 )]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 70.0
+margin_top = 50.0
+margin_right = 1350.0
+margin_bottom = 180.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[b]Godot y sus ventajas[/b]
+"
+text = "Godot y sus ventajas
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 64.0
+margin_top = 152.0
+margin_right = 1864.0
+margin_bottom = 1024.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[indent][b]·[/b] 2D dedicado; pixel perfect, sistema integrado de Tile maps, sistemas de UI, junto con3D Potente y sencillo de usar, optimizado para todo tipo de dispositivos
+[b]·[/b] No se instala, es un ejecutable auto contenido de 80Mb
+[b]·[/b] Diseño innovativo tanto en interfaz como en desarrollo
+[b]·[/b] Multi-lenguaje; GDScript, C#, C++ de forma oficial y muchos más a través de extensiones
+[b]·[/b] Multi plataforma; corre nativamente en Windows, Linux, Mac y Android de forma nativa
+[b]·[/b] Permite exportar a plataformas cerradas (PS y Nintendo) a través de publishers con las herramientas propietarias
+[b]·[/b] Permite exportar de forma sencilla a todos los formatos de plataformas abiertas:
+[indent][b]·[/b] Windows, Linux y MacOSX
+[b]·[/b] Android e IOs
+[b]·[/b] Xbox[/indent]
+
+"
+text = "	· 2D dedicado; pixel perfect, sistema integrado de Tile maps, sistemas de UI, junto con3D Potente y sencillo de usar, optimizado para todo tipo de dispositivos
+· No se instala, es un ejecutable auto contenido de 80Mb
+· Diseño innovativo tanto en interfaz como en desarrollo
+· Multi-lenguaje; GDScript, C#, C++ de forma oficial y muchos más a través de extensiones
+· Multi plataforma; corre nativamente en Windows, Linux, Mac y Android de forma nativa
+· Permite exportar a plataformas cerradas (PS y Nintendo) a través de publishers con las herramientas propietarias
+· Permite exportar de forma sencilla a todos los formatos de plataformas abiertas:
+	· Windows, Linux y MacOSX
+· Android e IOs
+· Xbox
+
+"
+custom_effects = [ SubResource( 1 ) ]
+
+[node name="DafoeLookingUp" type="Sprite" parent="."]
+position = Vector2( 1544, 1008 )
+rotation = -0.290387
+scale = Vector2( 0.190741, 0.190741 )
+texture = ExtResource( 4 )
+flip_h = true

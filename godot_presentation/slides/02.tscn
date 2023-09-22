@@ -1,8 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://slides/slide_template.tscn" type="PackedScene" id=1]
 [ext_resource path="res://theme/slide_template.tres" type="Theme" id=2]
 [ext_resource path="res://theme/rich_effects.gd" type="Script" id=3]
+[ext_resource path="res://media/unreal_logo.jpeg" type="Texture" id=4]
+[ext_resource path="res://media/Unity_logo.png" type="Texture" id=5]
+[ext_resource path="res://media/GameMakerlogo.png" type="Texture" id=6]
+[ext_resource path="res://media/cryengine-logo.png" type="Texture" id=7]
+[ext_resource path="res://media/Rpgmakerlogo.png" type="Texture" id=8]
 
 [sub_resource type="RichTextEffect" id=1]
 script = ExtResource( 3 )
@@ -11,12 +16,6 @@ script = ExtResource( 3 )
 
 [node name="Slide" parent="." instance=ExtResource( 1 )]
 
-[node name="Control" type="Control" parent="."]
-margin_left = 1280.0
-margin_top = 340.0
-margin_right = 1680.0
-margin_bottom = 740.0
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 70.0
 margin_top = 50.0
@@ -24,36 +23,78 @@ margin_right = 1350.0
 margin_bottom = 180.0
 theme = ExtResource( 2 )
 bbcode_enabled = true
-bbcode_text = "[b]¿Qué es un motor de videojuegos?[/b]
+bbcode_text = "[b]Desarrollo de videojuegos: situación[/b]
 "
-text = "¿Qué es un motor de videojuegos?
+text = "Desarrollo de videojuegos: situación
 "
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-margin_left = 120.0
+margin_left = 176.0
 margin_top = 210.0
-margin_right = 1770.0
+margin_right = 901.0
 margin_bottom = 960.0
 theme = ExtResource( 2 )
 bbcode_enabled = true
-bbcode_text = "Es un entorno de desarrollo que proporciona las herramientas necesarias para la creación de videojuegos como:
-[indent][b]·[/b] Renderizar entornos 2D y/o 3D
-[b]·[/b] Emular leyes físicas
-[b]·[/b] Detección de colisiones entre elementos
-[b]·[/b] Animación
-[b]·[/b] Producción de sonido
-[b]·[/b] Ejecución de scripts
-[b]·[/b] Inteligencia Artificial
-[b]·[/b] Y mucho más
-[/indent]"
-text = "Es un entorno de desarrollo que proporciona las herramientas necesarias para la creación de videojuegos como:
-	· Renderizar entornos 2D y/o 3D
-· Emular leyes físicas
-· Detección de colisiones entre elementos
-· Animación
-· Producción de sonido
-· Ejecución de scripts
-· Inteligencia Artificial
-· Y mucho más
-"
+bbcode_text = "Distribución a grandes rasgos:
+[b]·[/b] Grandes empresas
+[b]·[/b] Estudios pequeños
+[b]·[/b] Desarrolladores Indies
+[b]·[/b] Desarrolladores Amateurs"
+text = "Distribución a grandes rasgos:
+· Grandes empresas
+· Estudios pequeños
+· Desarrolladores Indies
+· Desarrolladores Amateurs"
 custom_effects = [ SubResource( 1 ) ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 1024.0
+margin_top = 206.0
+margin_right = 1749.0
+margin_bottom = 956.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Implicación en cuanto a sistemas de desarrollo:
+[b]·[/b] Motores propios o \"premium\"
+[b]·[/b] Motores gratuitos
+[b]·[/b] Motores Open Source
+[b]·[/b] Motores \"Dedicados\" o específicos"
+text = "Implicación en cuanto a sistemas de desarrollo:
+· Motores propios o \"premium\"
+· Motores gratuitos
+· Motores Open Source
+· Motores \"Dedicados\" o específicos"
+custom_effects = [ SubResource( 1 ) ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="UnrealLogo" type="Sprite" parent="."]
+position = Vector2( 176, 808 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="UnityLogo" type="Sprite" parent="."]
+position = Vector2( 614, 672 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 5 )
+
+[node name="Cryengine-logo" type="Sprite" parent="."]
+position = Vector2( 851, 896 )
+scale = Vector2( 0.285055, 0.285055 )
+texture = ExtResource( 7 )
+
+[node name="GameMakerlogo" type="Sprite" parent="."]
+position = Vector2( 1560, 704 )
+scale = Vector2( 0.596774, 0.596774 )
+texture = ExtResource( 6 )
+
+[node name="Rpgmakerlogo" type="Sprite" parent="."]
+position = Vector2( 1376, 896 )
+texture = ExtResource( 8 )

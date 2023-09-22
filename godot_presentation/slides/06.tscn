@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://theme/rich_effects.gd" type="Script" id=1]
+[ext_resource path="res://theme/slide_template.tres" type="Theme" id=2]
+[ext_resource path="res://slides/slide_template.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RichTextEffect" id=1]
+script = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Slide" parent="." instance=ExtResource( 3 )]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 70.0
+margin_top = 50.0
+margin_right = 1456.0
+margin_bottom = 180.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[b]Agradecimientos, menciones y enlaces de interes[/b]
+"
+text = "Agradecimientos, menciones y enlaces de interes
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 64.0
+margin_top = 152.0
+margin_right = 1864.0
+margin_bottom = 1024.0
+theme = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Agradecimientos:
+[b]·[/b]  RafaLagoon; Profesor de desarrollo de videojuegos y divulgador de Godot en redes sociales
+[b]·[/b]  jynus, por permitirme basarme en su código para hacer la presentación
+[b]·[/b] Kenney por fuentes y assets
+
+Enlaces de interes:
+[b]·[/b]  [url]https://github.com/godotengine/godot[/url]
+[b]·[/b]  [url]https://godotengine.org/[/url]
+[b]·[/b]  [url]https://gdquest.github.io/learn-gdscript/[/url]
+[b]·[/b]  [url]https://www.youtube.com/watch?v=UAS_pUTFA7o[/url]
+[b]·[/b]  [url]https://www.youtube.com/watch?v=xF3QiQfQxeQ[/url]
+[b]·[/b]  [url]https://www.youtube.com/watch?v=9kKp0oguzr8[/url]
+"
+text = "Agradecimientos:
+·  RafaLagoon; Profesor de desarrollo de videojuegos y divulgador de Godot en redes sociales
+·  jynus, por permitirme basarme en su código para hacer la presentación
+· Kenney por fuentes y assets
+
+Enlaces de interes:
+·  https://github.com/godotengine/godot
+·  https://godotengine.org/
+·  https://gdquest.github.io/learn-gdscript/
+·  https://www.youtube.com/watch?v=UAS_pUTFA7o
+·  https://www.youtube.com/watch?v=xF3QiQfQxeQ
+·  https://www.youtube.com/watch?v=9kKp0oguzr8
+"
+custom_effects = [ SubResource( 1 ) ]

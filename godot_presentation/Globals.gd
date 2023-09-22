@@ -1,6 +1,6 @@
 extends Node2D
 
-var currentSlide = 1
+var currentSlide = 0
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") or Input.is_action_just_pressed("ui_right"):
