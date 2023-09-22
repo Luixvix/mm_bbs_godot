@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "RichTextEffect",
+"class": "RichTextMatrix",
+"language": "GDScript",
+"path": "res://theme/rich_effects.gd"
+} ]
+_global_script_class_icons={
+"RichTextMatrix": ""
+}
+
 [application]
 
 config/name="godot_presentation"
@@ -22,6 +32,7 @@ Globals="*res://Globals.gd"
 
 window/size/width=1920
 window/size/height=1080
+window/size/always_on_top=true
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 

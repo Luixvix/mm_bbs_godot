@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://media/bag.png" type="Texture" id=1]
 [ext_resource path="res://media/logo-grupo-mas-movil-GMM.png" type="Texture" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://theme/label_font.tres" type="DynamicFont" id=4]
 
 [node name="Slide" type="Node2D"]
@@ -47,3 +48,8 @@ text = "#bbs"
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="GodotLogo" type="Sprite" parent="."]
+position = Vector2( 1820, 990 )
+scale = Vector2( 1.59375, 1.59375 )
+texture = ExtResource( 3 )

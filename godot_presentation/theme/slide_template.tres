@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=7 format=2]
 
-[ext_resource path="res://theme/normal_text.tres" type="DynamicFontData" id=1]
+[ext_resource path="res://theme/Roboto-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://theme/label_font.tres" type="DynamicFont" id=2]
-[ext_resource path="res://theme/title_font.tres" type="DynamicFontData" id=3]
+[ext_resource path="res://theme/Roboto-Black.ttf" type="DynamicFontData" id=3]
 
 [sub_resource type="StyleBoxLine" id=1]
 
